@@ -15,8 +15,7 @@
 
 .modal {
     color: white;
-    top:50%;
-    transform: translateY(-50%);
+    top:30vh;
     z-index: 100;
     background: rgb(39, 39, 39);
     position: relative;
@@ -25,7 +24,8 @@
     max-width: 400px;
     width: 80%;
     padding: 3rem;
-    border: 1px solid #ffff00
+    border: 1px solid #ffff00;
+    animation: slideDownModal 300ms ease
 }
 
 .modal label, .modal input {
@@ -72,4 +72,15 @@
     border: 1px solid yellow;
     background-color: rgb(21, 21, 21);
     color: white
+}
+
+@keyframes slideDownModal {
+    from {
+        opacity:0;
+        transform: translateY(-200px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
