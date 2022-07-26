@@ -18,16 +18,12 @@ const TaskSummaryByType = (props) => {
   }
 
   return (
-    <div className="task-summary-by-type">
-      <span style={{ backgroundColor: props.backgroundColor }}>
-        {props.type === "Other" && `${props.type} : ${other} task(s) remaining`}
-        {props.type === "Personal" &&
-          `${props.type} : ${personal} task(s) remaining`}
-        {props.type === "Work" && `${props.type} : ${work} task(s) remaining`}
-        {props.type === "Shopping" &&
-          `${props.type} : ${shopping} task(s) remaining`}
-      </span>
-    </div>
+    <span style={{ backgroundColor: props.backgroundColor }}>
+      {props.type === "Other" && `${props.type} : ${other} `}
+      {props.type === "Personal" && `${props.type} : ${personal}`}
+      {props.type === "Work" && `${props.type} : ${work}`}
+      {props.type === "Shopping" && `${props.type} : ${shopping}`}
+    </span>
   );
 };
 

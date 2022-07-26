@@ -12,7 +12,7 @@ const TaskSummary = () => {
         going tasks
       </h3>
 
-      <div>
+      <div className="task-summary-by-type">
         <TaskSummaryByType type={"Other"} backgroundColor={"#94fca0"} />
         <TaskSummaryByType type={"Personal"} backgroundColor={"#FFBB98"} />
         <TaskSummaryByType type={"Work"} backgroundColor={"#FAE6B1"} />

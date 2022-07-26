@@ -1,9 +1,16 @@
 .task-summary-by-type {
-    margin: 20px 0;
+    margin-top: 20px ;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .task-summary-by-type span {
     padding: 5px 15px;
     border-radius: 20px;
     font-weight: bold;
+}
+
+.task-summary-by-type span:not(:last-child) {
+    margin-right: 20px;
 }
