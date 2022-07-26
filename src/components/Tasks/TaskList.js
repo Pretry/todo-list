@@ -7,7 +7,7 @@ import TaskContext from "../store/task-context";
 const TaskList = (props) => {
   const ctxTask = useContext(TaskContext);
 
-  const noTask = "Your todo is empty for the day";
+  const noTask = "Your todo list is empty for the day";
   return (
     <Container>
       {ctxTask.taskList.length === 0 ? (
