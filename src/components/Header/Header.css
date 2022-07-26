@@ -1,0 +1,15 @@
+.header h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header button {    
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border:none;
+    background:yellow;
+    font-weight: bold;
+    font-size: 18px
+}
